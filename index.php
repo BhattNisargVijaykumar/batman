@@ -11,5 +11,6 @@
 <input type="text" name="username">
 <label for="password">Password:-</label>
 <input type="Password" name="password">
+<input type="submit" name="Submit">
 </body>
 </html>
