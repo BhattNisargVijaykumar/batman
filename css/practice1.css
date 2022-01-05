@@ -28,7 +28,7 @@ figcaption{
 p{
     color: grey;
     text-align: center;
-    width: auto;
+    width: 70%;
     margin-left: 50px;
     margin-right: 50px;
 }
@@ -39,4 +39,5 @@ hr{
     margin-left: 50px;
     margin-right: 50px;
     color: grey;
+    width: 70%;
 }
