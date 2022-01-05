@@ -6,19 +6,16 @@ body{
 * {
   box-sizing: border-box;
 }
-.pr2{
-    align-self: center;
-}
 img{
     height: 80px;
     width: 80px;
     padding: 1px;
-    align-self: center;
     border-radius: 50%;
 }
 
 .column {
   float: left;
+  left: 50%;
   width: 18%;
   padding: 0 10px;
 }
@@ -36,7 +33,6 @@ img{
     
 }
 .pr2{
-
 width: 100%;
 }
 
