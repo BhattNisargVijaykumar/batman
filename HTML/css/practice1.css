@@ -1,0 +1,43 @@
+figure{
+    height: auto;
+    border: 2px double lightgrey;
+    width: auto;
+    padding: 2px;
+}
+.row{
+width: 25%;
+}
+div{
+    width: 100%;
+    display: flex;
+    text-align: center;
+}
+img{
+    height: 315px;
+    width: 215px;
+}
+figcaption{
+    text-align: center;
+    background: lightgrey;
+    width: auto;
+    height: auto;
+    padding: 3px;
+    color: grey;
+    font-family: inherit;
+}
+p{
+    color: grey;
+    text-align: center;
+    width: 70%;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+hr{
+    style=width:25%;
+    text-align:left;
+    margin-left:0;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: grey;
+    width: 70%;
+}

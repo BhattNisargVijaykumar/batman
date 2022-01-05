@@ -1,0 +1,45 @@
+body{
+    text-align: center;
+    font-family: sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+img{
+    height: 80px;
+    width: 80px;
+    padding: 1px;
+    border-radius: 50%;
+}
+
+.column {
+  float: left;
+  left: 50%;
+  width: 18%;
+  padding: 0 10px;
+}
+
+.row {
+    align: center;
+}
+
+.card {
+  box-shadow: 4px 4px 8px 4px;
+  padding: 16px;
+  text-align: center;
+    color: grey;
+    transition: 0.3s;
+    
+}
+.pr2{
+width: 100%;
+}
+
+p{
+    color: black;
+}
+
+h4{
+    color: black;
+}
