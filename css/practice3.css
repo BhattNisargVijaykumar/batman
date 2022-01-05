@@ -1,0 +1,32 @@
+body{
+    align-self: center;
+}
+figure{
+    height: auto;
+    border: 2px double lightgrey;
+    width: auto;
+    padding: 2px;
+    float: left;
+}
+div{
+    width: 100%;
+}
+img{
+    height: 315px;
+    width: 215px;
+    padding: 1px;
+}
+figcaption{
+    text-align: center;
+    background: lightgrey;
+    width: auto;
+    height: auto;
+    padding: 5px;
+    color: grey;
+    font-family: inherit;
+}
+p{
+    color: grey;
+    text-align: center;
+    width: auto;
+}

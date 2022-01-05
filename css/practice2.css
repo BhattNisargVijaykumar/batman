@@ -1,0 +1,50 @@
+body{
+    text-align: center;
+}
+h1{
+    font-family: sans-serif;
+}
+h6{
+    color: grey;
+}
+.card{
+    box-shadow: 0 3px 6px 0;
+    transition: 0.3s;
+    width: 40%;
+    color: lightgrey;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0;
+}
+h3{
+    color: grey;
+}
+img{
+    height: 30px;
+    width: 30px;
+    padding: 1px;
+    align-self: center;
+    border-radius: 50%;
+}
+hr{
+    style=width:50%;
+    text-align:left;
+    margin-left:0;
+    padding-right: 15px;
+    padding-left: 15px;
+    color: grey;
+}
+figcaption{
+    text-align: center;
+    background: lightgrey;
+    width: auto;
+    height: auto;
+    padding: 5px;
+    color: grey;
+    font-family: inherit;
+}
+p{
+    color: grey;
+    text-align: center;
+    width: auto;
+}
