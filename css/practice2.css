@@ -6,6 +6,9 @@ body{
 * {
   box-sizing: border-box;
 }
+.pr2{
+    align-self: center;
+}
 img{
     height: 80px;
     width: 80px;
@@ -31,6 +34,10 @@ img{
     color: grey;
     transition: 0.3s;
     
+}
+.pr2{
+
+width: 100%;
 }
 
 p{
