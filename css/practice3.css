@@ -30,3 +30,90 @@ p{
     text-align: center;
     width: auto;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+body{
+    text-align: center;
+}
+h1{
+    font-family: sans-serif;
+}
+h3{
+    color: black;
+}
+h4{
+    color: black;
+    font-family: sans-serif;
+}
+p{
+    color: black;
+}
+.card{
+    margin-top: 5px;
+    box-shadow: 0 3px 6px 0;
+    transition: 0.3s;
+    width: 33.3%;
+    color: grey;
+
+  padding: 16px;
+  text-align: center;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0;
+}
+h3{
+    color: grey;
+}
+img{
+    height: 80px;
+    width: 80px;
+    padding: 1px;
+    align-self: center;
+    border-radius: 50%;
+}
+hr{
+    style=width:25%;
+    text-align:left;
+    margin-left:0;
+    padding-right: 15px;
+    padding-left: 15px;
+    color: grey;
+}
+
+
+
+.column {
+  float: left;
+  width: fit-content;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
