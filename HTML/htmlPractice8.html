@@ -10,11 +10,12 @@
 </head>
 <body>
 	<div class="box">
+		<form name="myForm">
 		<h4>Personal Information</h4>
 		<table>
 			<tr>
 				<td><label>First-name</label></td>
-				<td><input type="text" id="fname" name="firstname"><br></td>
+				<td><input type="text" id="fname" name="firstname" required><br></td>
 			</tr>
 			<tr>
 				<td><label>Last-name</label></td>
@@ -100,7 +101,7 @@
 		<table>
 		<tr>
 			<td><label>Email</label></td>
-			<td><input type="text" id="email" name="email"><br></td>
+			<td><input type="text" id="email" name="email" required><br></td>
 			<td><label>(Your email address will be your username)</label></td>
 		</tr>
 		<tr>
@@ -109,7 +110,7 @@
 		</tr>
 		<tr>
 			<td><label>Password</label></td>
-			<td><input type="text" id="password" name="password"><br></td>
+			<td><input type="text" id="password" name="password" required><br></td>
 			<td><label>(Min. 8 characters, 1 number, case-sensitive)</label></td>
 		</tr>
 		<tr>
@@ -131,7 +132,7 @@
 		</tr>
 		</table>
 
-		<h4>COntact Information</h4>
+		<h4>Contact Information</h4>
 		<table>
 			<tr>
 				<td><label>Addresss:</label></td>
@@ -155,13 +156,14 @@
 			</tr>
 			<tr>
 				<td><label>Phone:</label></td>
-				<td><input type="text" id="phone" name="phone"><br></td>
+				<td><input type="text" id="phone" name="phone" required><br></td>
 			</tr>
 			<tr>
 				<td><input type="reset" value="reset"></td>
 				<td><input type="submit" value="submit"></td>
 			</tr>
 		</table>
+		</form>
 	</div>
 </body>
 </html>
