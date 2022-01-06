@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+@import url('css/formpractice.css');
+</style>
+</head>
+<body>
+<div class="row">
+  <div class="column" onclick="openLoginForm()">
+  <h2>Login</h2>    
+  </div>
+  <div class="column" onclick="openSignupForm()">
+    <h2>Signup</h2>
+  </div>
+  <div class="column" onclick="openContactusForm()">
+    <h2>Contact us</h2>
+  </div>
+</div>
+<p id="text">Click for open form.</p>
+<div class="form-popup" id="openLogin">
+  <form action="/action_page.php" class="form-container">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn" onclick="loginsubmit()">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<div class="form-popup" id="openSignup">
+  <form action="/action_page.php" class="form-container">
+    <h1>Signup</h1>
+    <form>
+    <fieldset>
+      <legend>Your Address</legend>
+    <table>
+      <tr>
+        <td><label>First-name</label></td>
+        <td><input type="text" id="fname" name="firstname" placeholder="Enter First Name" ><br></td>
+      </tr>
+      <tr>
+        <td><label>Last-name</label></td>
+        <td><input type="text" id="lname" name="lastname" placeholder="Enter Last Name" ><br></td>
+      </tr>
+      <tr>
+        <td><label>Street</label></td>
+        <td><input type="text" id="street" name="street" placeholder="Enter Street" ><br></td>
+      </tr>
+      <tr>
+        <td><label>City</label></td>
+        <td><input type="text" id="city"  name="city" placeholder="Enter City" > <br></td>
+      </tr>
+    </table>
+    </fieldset>
+    <fieldset>
+    <legend>Additional Details</legend>
+    <table>
+      <tr>
+        <td><label>Biography</label></td>
+        <td><textarea> Bio</textarea> <br><br></td>
+      </tr>
+      <tr>
+        <td><label>Image</label></td>
+        <td><input type="file" name="file"><br></td>
+      </tr>
+      <tr>
+        <td><label>Age Group</label></td>
+        <td><select name="age">
+          <option>0 to 9 Years</option>
+          <option>10 to 18 Years</option>
+          <option>19 to 25 Years</option>
+        </select><br></td>
+      </tr>
+    </table>
+    </fieldset>
+    <fieldset>
+      <legend>Intereset</legend>
+    <table>
+      <tr>
+        <td><label>Hobbies</label></td>
+        <td>
+          <select name="hobbie" multiple>
+            <option>Playing soccer</option>
+            <option>Dancing</option>
+            <option>Gardening</option>
+            <option>Watching Movies</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label>Favourite car?</label></td>
+        <td><select name="car">
+          <option>Volvo</option>
+          <option>AUDI</option>
+          <option>BMW</option>
+        </select><br></td>
+      </tr>
+      <tr>
+        <td><label>Favourite public transport?</label></td>
+        <td><select name="car" multiple>
+          <optgroup label="Ground">
+          <option>Train</option>
+          <option>Bus</option>
+          <optgroup label="Water">
+            <option>Ship</option>
+            <option>Boat</option>
+          </optgroup>
+        </select><br></td>
+      </tr>
+    </table>
+</fieldset>
+<input type="checkbox" checked="checked" name="remember" style="marginbottom: 15px"> Remember me
+</label>
+<p>By creating an account you agree to our <a href="#"
+style="color:dodgerblue">Terms & Privacy</a><p>
+  <button type="button" class="btn" onclick="signupsubmit()">Close</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<div class="form-popup" id="openContactus">
+  <form action="/action_page.php" class="form-container">
+    <h1>Contactus</h1>
+    <div>
+      <form>
+        <div class="divtext">
+          <i class="fa fa-user icon"></i>
+          <label>Full Name</label>
+          <input type="text" name="fullname" placeholder="Full Name" required>
+        </div>
+        <br>
+        <div class="divtext">
+          <i class="fa fa-envelope icon"></i>
+          <label>Email</label>
+          <input type="text" name="email" placeholder="Eg.example@gmail.com" autocomplete="email" required>
+        </div>
+        <br>
+        <div class="divtext">
+          <i class="fa fa-phone icon"></i>
+          <label>Phone</label>
+          <input type="text" name="phonenumber" placeholder="Eg. +18000 00000" required>
+        </div>
+        <br>
+        <div class="divtext">
+          <i class="fa fa-comment icon"></i>
+          <label>Comments</label>
+          <textarea name="comment" placeholder="Your Comments..."></textarea>
+        </div>
+        <br>
+        <button type="submit" class="btn" name="Submit" onclick="contactussubmit()">submit</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </form>
+    </div>
+    
+  </form>
+</div>
+<script>
+function openLoginForm() {
+  document.getElementById("openLogin").style.display = "block";
+  document.getElementById("openSignup").style.display = "none";
+  document.getElementById("openContactus").style.display = "none";
+  document.getElementById("text").style.display = "none"
+}
+
+function openSignupForm() {
+  document.getElementById("openSignup").style.display = "block";
+  document.getElementById("openLogin").style.display = "none";
+  document.getElementById("openContactus").style.display = "none";
+  document.getElementById("text").style.display = "none"
+}
+
+function openContactusForm() {
+  document.getElementById("openContactus").style.display = "block";
+  document.getElementById("openLogin").style.display = "none";
+  document.getElementById("openSignup").style.display = "none";
+  document.getElementById("text").style.display = "none"
+}
+
+function closeForm() {
+  document.getElementById("text").style.display = "block"
+  document.getElementById("openContactus").style.display = "none";
+  document.getElementById("openLogin").style.display = "none";
+  document.getElementById("openSignup").style.display = "none";
+}
+
+function contactussubmit() {
+ alert("Your Form Submit")
+}
+
+function signupsubmit() {
+ alert("Your Form Submit")
+}
+
+function loginsubmit() {
+ alert("Your Form Submit")
+}
+</script>
+
+</body>
+</html>
