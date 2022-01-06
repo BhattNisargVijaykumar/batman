@@ -4,34 +4,124 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>HTML Practice-7</title>
-	<style type="text/css">
-		@import url("css/practice7.css");
-	</style>
 </head>
 <body>
-	<div class="row">
-		<figure>
-			<img src="image/preview1.png" alt="preview1">
-			<figcaption>IMAGE CAPTION HERE</figcaption>
-		</figure>
-		<figure>
-			<img src="image/preview2.png" alt="preview2">
-			<figcaption>IMAGE CAPTION HERE</figcaption>
-		</figure>
-		<figure>
-			<img src="image/preview3.png" alt="preview3">
-			<figcaption>IMAGE CAPTION HERE</figcaption>
-		</figure>
-		<figure>	
-			<img src="image/preview4.png" alt="preview4">
-			<figcaption>IMAGE CAPTION HERE</figcaption>
-		</figure>
-	</div>
-	<div>
-		<p>
-			Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed. Facilispede estibulum nulla orna nisl velit elit ac aliquat non tincidunt. Namjusto cras urna urnaretra lor urna neque sed quis orci nulla laoremut vitae doloreet condimentumst.
-		</p>
-	</div>
-		<hr>
+<div>
+	<form>
+		<fieldset>
+			<legend>Your Address</legend>
+		<table>
+		
+				
+			<tr>
+				<td><label>First-name</label></td>
+				<td><input type="text" id="fname" name=firstname"><br></td>
+			</tr>
+
+			<tr>
+				<td><label>Last-name</label></td>
+				<td><input type="text" id="lname" name="lastname"><br></td>
+			</tr>
+
+			
+
+			<tr>
+				<td><label>Street</label></td>
+				<td><input type="text" id="street" name="street"><br></td>
+			</tr>
+
+			<tr>
+				<td><label>City</label></td>
+				<td><input type="text" id="city"  name="city"> <br></td>
+				
+			</tr>
+
+			
+
+			
+		</table>
+		</fieldset>
+
+		<fieldset>
+			
+		<legend>Additional Details</legend>
+		
+		<table>
+			<tr>
+				<td><label>Biography</label></td>
+				<td><textarea rows="2" cols="15"></textarea> <br><br></td>
+				
+			</tr>
+
+			<tr>
+				<td><label>Image</label></td>
+				<td><input type="file" name="file"><br></td>
+				
+			</tr>
+
+			<tr>
+				<td><label>Age Group</label></td>
+				<td><select name="age">
+					<option>0 to 9 Years</option>
+					<option>10 to 18 Years</option>
+					<option>19 to 25 Years</option>
+				</select><br></td>
+				
+			</tr>
+
+			
+		</table>
+		</fieldset>
+
+		<fieldset>
+			<legend>Intereset</legend>
+		
+		<table>
+			<tr>
+				<td><label>Hobbies</label></td>
+				<td>
+				<input type="checkbox" id="hobbie1" name="hobbie1" value="hobbie1">
+				<label for="hobbie1"> Playing soccer</label><br>
+				<input type="checkbox" id="hobbie2" name="hobbie2" value="hobbie2">
+				<label for="hobbie2"> Dancing</label><br>
+				<input type="checkbox" id="hobbie3" name="hobbie3" value="hobbie3">
+				<label for="hobbie3"> Gardening</label><br>
+				<input type="checkbox" id="hobbie4" name="hobbie4" value="hobbie4">
+				<label for="hobbie4"> Watching Movies</label><br>
+				</td>
+				
+			</tr>
+
+			<tr>
+				<td><label>Favourite car?</label></td>
+				<td><select name="car">
+					<option>Volvo</option>
+					<option>AUDI</option>
+					<option>BMW</option>
+				</select><br></td>
+				
+			</tr>
+
+			<tr>
+				<td><label>Favourite public transport?</label></td>
+				<td><select name="car">
+					<option>Volvo</option>
+					<option>AUDI</option>
+					<option>BMW</option>
+				</select><br></td>
+				
+			</tr>
+
+		</table>
+</fieldset>
+		
+		<input type="reset" value="reset">
+		<input type="submit" value="submit">
+		
+
+	</form>
+
+</div>	
+
 </body>
 </html>
