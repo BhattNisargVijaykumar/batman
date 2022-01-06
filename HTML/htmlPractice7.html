@@ -26,7 +26,6 @@
 			<tr>
 				<td><label>City</label></td>
 				<td><input type="text" id="city"  name="city"> <br></td>
-				
 			</tr>
 		</table>
 		</fieldset>
@@ -57,14 +56,12 @@
 			<tr>
 				<td><label>Hobbies</label></td>
 				<td>
-				<input type="checkbox" id="hobbie1" name="hobbie1" value="Playing soccer">
-				<label for="hobbie1"> Playing soccer</label><br>
-				<input type="checkbox" id="hobbie2" name="hobbie2" value="Dancing">
-				<label for="hobbie2"> Dancing</label><br>
-				<input type="checkbox" id="hobbie3" name="hobbie3" value="Gardening">
-				<label for="hobbie3"> Gardening</label><br>
-				<input type="checkbox" id="hobbie4" name="hobbie4" value="Watching Movies">
-				<label for="hobbie4"> Watching Movies</label><br>
+					<select name="hobbie" multiple>
+						<option>Playing soccer</option>
+						<option>Dancing</option>
+						<option>Gardening</option>
+						<option>Watching Movies</option>
+					</select>
 				</td>
 			</tr>
 			<tr>
@@ -77,10 +74,14 @@
 			</tr>
 			<tr>
 				<td><label>Favourite public transport?</label></td>
-				<td><select name="car">
-					<option>Volvo</option>
-					<option>AUDI</option>
-					<option>BMW</option>
+				<td><select name="car" multiple>
+					<optgroup label="Ground">
+					<option>Train</option>
+					<option>Bus</option>
+					<optgroup label="Water">
+						<option>Ship</option>
+						<option>Boat</option>
+					</optgroup>
 				</select><br></td>
 			</tr>
 		</table>

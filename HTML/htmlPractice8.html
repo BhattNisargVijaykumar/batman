@@ -9,29 +9,159 @@
 	</style>
 </head>
 <body>
-	<div class="row">
-		<figure>
-			<img src="image/preview1.png" alt="preview1">
-			<figcaption>IMAGE CAPTION HERE</figcaption>
-		</figure>
-		<figure>
-			<img src="image/preview2.png" alt="preview2">
-			<figcaption>IMAGE CAPTION HERE</figcaption>
-		</figure>
-		<figure>
-			<img src="image/preview3.png" alt="preview3">
-			<figcaption>IMAGE CAPTION HERE</figcaption>
-		</figure>
-		<figure>	
-			<img src="image/preview4.png" alt="preview4">
-			<figcaption>IMAGE CAPTION HERE</figcaption>
-		</figure>
+	<div class="box">
+		<h4>Personal Information</h4>
+		<table>
+			<tr>
+				<td><label>First-name</label></td>
+				<td><input type="text" id="fname" name="firstname"><br></td>
+			</tr>
+			<tr>
+				<td><label>Last-name</label></td>
+				<td><input type="text" id="lname" name="lastname"><br></td>
+			</tr>
+			<tr>
+				<td><label>Date of Birth</label></td>
+				<td><select name="Month">
+					<option>Months</option>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+					<option>7</option>
+					<option>8</option>
+					<option>9</option>
+					<option>10</option>
+					<option>11</option>
+					<option>12</option>
+				</select>
+					<select name="Day">
+					<option>Day</option>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+					<option>7</option>
+					<option>8</option>
+					<option>9</option>
+					<option>10</option>
+					<option>11</option>
+					<option>12</option>
+					<option>13</option>
+					<option>14</option>
+					<option>15</option>
+					<option>16</option>
+					<option>17</option>
+					<option>18</option>
+					<option>19</option>
+					<option>20</option>
+					<option>21</option>
+					<option>22</option>
+					<option>23</option>
+					<option>24</option>
+					<option>25</option>
+					<option>26</option>
+					<option>27</option>
+					<option>28</option>
+					<option>29</option>
+					<option>30</option>
+					<option>31</option>
+				</select>
+					<select name="Year">
+					<option>Year</option>
+					<option>1950</option>
+					<option>1960</option>
+					<option>1970</option>
+					<option>1980</option>
+					<option>1990</option>
+					<option>2000</option>
+					<option>2010</option>
+					<option>2020</option>
+					<option>2030</option>
+				</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Gender</td>
+				<td>
+					<select name="Gender">
+					<option>Choose a Gender</option>
+					<option>Male</option>
+					<option>Female</option>
+					<option>Other</option>
+				</td>
+			</tr>
+		</table>
+		<h4>Account Information</h4>
+		<table>
+		<tr>
+			<td><label>Email</label></td>
+			<td><input type="text" id="email" name="email"><br></td>
+			<td><label>(Your email address will be your username)</label></td>
+		</tr>
+		<tr>
+			<td><label>Re-type Email</label></td>
+			<td><input type="text" id="retypeEmail" name="retypeEmail"><br></td>
+		</tr>
+		<tr>
+			<td><label>Password</label></td>
+			<td><input type="text" id="password" name="password"><br></td>
+			<td><label>(Min. 8 characters, 1 number, case-sensitive)</label></td>
+		</tr>
+		<tr>
+			<td><label>Re-type Password</label></td>
+			<td><input type="text" id="retypePassword" name="retypePassword"><br></td>
+		</tr>
+		<tr>
+			<td><label>Security Question</label></td>
+			<td><select name="securityQuestion">
+					<option>Choose a security question</option>
+					<option>Your home address</option>
+					<option>your first house number</option>
+				</select></td>
+		</tr>
+		<tr>
+			<td><label>Security Answer</label></td>
+			<td><input type="text" id="securityAnswer" name="securityAnswer"><br></td>
+			<td><label>(Not case-sensitive)</label></td>
+		</tr>
+		</table>
+
+		<h4>COntact Information</h4>
+		<table>
+			<tr>
+				<td><label>Addresss:</label></td>
+				<td><input type="text" id="address" name="address"><br></td>
+			</tr>
+			<tr>
+				<td><label>City:</label></td>
+				<td><input type="text" id="city" name="city"><br></td>
+			</tr>
+			<tr>
+				<td><label>State:</label></td></td>
+			<td><select name="state">
+					<option>Choose your state</option>
+					<option>gujarat</option>
+					<option>delhi</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td><label>Zip Code:</label></td>
+				<td><input type="text" id="zipCode" name="zipCode"><br></td>
+			</tr>
+			<tr>
+				<td><label>Phone:</label></td>
+				<td><input type="text" id="phone" name="phone"><br></td>
+			</tr>
+			<tr>
+				<td><input type="reset" value="reset"></td>
+				<td><input type="submit" value="submit"></td>
+			</tr>
+		</table>
 	</div>
-	<div>
-		<p>
-			Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed. Facilispede estibulum nulla orna nisl velit elit ac aliquat non tincidunt. Namjusto cras urna urnaretra lor urna neque sed quis orci nulla laoremut vitae doloreet condimentumst.
-		</p>
-	</div>
-		<hr>
 </body>
 </html>
