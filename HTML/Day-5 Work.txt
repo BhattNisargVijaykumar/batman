@@ -1,0 +1,14 @@
+Day-5 (Basic of Data Structure)
+
+Data Structure:- It is ways to store a different types of data in a one structure.
+
+Algorithms:- Operations on different data structures + sets of instructions for executing them. 
+It is also called a step by step procedure which we will perform in program of to get a desired output or solve a problem. 
+
+Array:- It is Collection of items to be stored at Contiguous memory location.
+It is use to store same type data in together or one by one memory location.
+
+class:- It is blueprint or prototype from which objects are created. 
+It is one common object properties representation.
+
+objects:- It is use for represents the real-life entities.
