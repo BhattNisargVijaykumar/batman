@@ -1,0 +1,96 @@
+Day-7 (Tree, Binary Search & Quick Sort)
+Tree:- A tree is non-linear and a hierarchical data structure consisting of a collection of nodes such that each node of the tree stores a value, a list of references to nodes (the “children”).
+A tree is essentially a collection of multiple nodes connected by edges. These ‘trees’ form a tree-like data structure, with the ‘root’ node leading to ‘parent’ nodes, which eventually lead to ‘children’ nodes. The connections which are formed by lines known as ‘edges.’
+Endpoints that have no children nodes are referred to as ‘leaf’ nodes. Trees in data structures play an important role due to the non-linear nature of their structure. This allows for a faster response time during a search as well as greater convenience during the design process.
+
+#Types of Trees in Data Structure
+    1. General Tree
+    2. Binary Tree
+    3. Binary Search Tree
+    4. AVL Tree
+    5. Red Black Tree
+    6. Splay Tree
+    7. Treap
+    8. B-Tree
+
+#Advantages of tree data structure
+    1.provides a hierarchical way of storing data
+    2.reflects structural relationship in a data set
+    3.allows insertion, deletion and searching operations that yield results faster than an array or linked list
+    4.provides a flexible way to hold and move data
+    5.allows storage of many nodes
+
+
+#General tree
+-A general tree is a type of tree data structure that has no constraints on the hierarchical structure. Every node can have an infinite number of children in a general tree. You can classify any tree having a hierarchical structure as a general tree. Also, the nodes can have any degree from 0 to n. A general tree stores hierarchical structures, such as a folder structure in a computer system.
+
+#Binary tree
+-As the name suggests, binary trees comprise nodes having two child nodes. Any node in a binary tree can have only zero, one or two nodes. These trees are highly functional and help serve many purposes in the data structure. Using a binary tree, data scientists and analysts can create a representation of data through a bifurcating structure and they can easily access nodes and label them as per convenience.
+
+#Binary search trees (BST)
+-A binary search tree is an extension of a binary tree with several optional restrictions. Only when the left child of a node is less than or equal to the parent value and the right child of the same node is greater than or equal to the parent value, a tree becomes a binary search tree. This unique subtype of a binary tree helps in the faster searching or lookup of data and facilitates the addition and removal of data.
+-Data scientists and data analysts use BST to sort simple algorithms and use BST as a priority queue. Also, BST finds usage in search applications where you constantly add and remove data.
+
+#AVL tree
+-An AVL tree is a self-balancing BST. This tree can automatically balance its height because each node stores a value called “balance factor," representing the difference in the height of a right sub-tree and left sub-tree. The AVL nodes can have a balance factor of minus one, zero and one. It enjoys all properties of a BST and derives its name from the founders–Adelson-Velshi and Landis. Data scientists and analysts widely use AVL trees while performing lookup operations and situations where frequent data insertion is necessary. AVL finds its usage in memory management subsystems of the Linux kernel.
+
+#Red-black tree
+-Similar to AVL, a red-black tree is a self-balancing BST. The only difference is that each node in a red-black tree is red or black. Also, the colour of these nodes ensures that the tree remains self-balanced every time someone inserts or adds a value. The root of the red-black tree is usually black and all the leaves are also black. Interestingly, when a node is red, both child nodes are black.
+-Every path from a node to any leaf node in a red-black tree goes through the same number of black nodes. Computation geometry uses this type of tree data structure.
+
+#Splay tree
+-Another type of self-balancing BST is the splay tree. Data scientists and analysts use a splay tree to implement caches and in garbage collectors. After performing the insertion and deletion, the splay tree comes into action and performs the splaying. In splaying, the tree rearranges so that particular elements are at the root of the tree.
+
+#Treap tree
+-A treap tree is a combination of a BST and a heap. Heap is a binary tree that implements priority queues and you can store them logically in an array. Each node in a treap tree has two values: a key and a priority. Treap is an excellent data structure to build a randomised binary search tree. Unlike other tree data structures, treap is a self-organising structure that requires no management and complex algorithms.
+
+#B-tree
+-B-tree is another self-balancing search tree that comprises many nodes to keep data stored in a particular order. Each node has over two child nodes and each node comprises multiple keys. B-trees are compatible with file systems and databases that can write and read larger blocks of data.
+-Using B-tree, data scientists can sort data to allow search, provide sequential access and allow insertion and deletion of data in logarithmic time. Larger storage systems like disks use B-tree data structures. Leaves in a B-tree carry no information and they appear at the same level.
+
+
+
+
+Binary Search:-A binary search is an advanced type of search algorithm that finds and fetches data from a sorted list of items. Its core working principle involves dividing the data in the list to half until the required value is located and displayed to the user in the search result. Binary search is commonly known as a half-interval search or a logarithmic search.
+
+#How Binary Search Works?
+-The binary search works in the following manner:
+    1.The search process initiates by locating the middle element of the sorted array of data
+    2.After that, the key value is compared with the element
+    3.If the key value is smaller than the middle element, then searches analyses the upper values to the middle element for comparison and matching
+    4.In case the key value is greater than the middle element then searches analyses the lower values to the middle element for comparison and matching
+
+#Benefits of binary trees
+    1.An ideal way to go with the hierarchical way of storing data
+    2.Reflect structural relationships that exist in the given data set
+    3.Make insertion and deletion faster than linked lists and arrays 
+    4.A flexible way of holding and moving data
+    5.Are used to store as many nodes as possible
+    6.Are faster than linked lists and slower than arrays when comes to accessing elements
+
+Practical Practice:-Binary Search Program(BinarySortAlgo.java)
+
+
+
+
+Quick Sort:-QuickSort is a Divide and Conquer algorithm. It picks an element as pivot and partitions the given array around the picked pivot. There are many different versions of quickSort that pick pivot in different ways. 
+    1.Always pick first element as pivot.
+    2.Always pick last element as pivot (implemented below)
+    3.Pick a random element as pivot.
+    4.Pick median as pivot.
+
+#Advantages
+    1.It is in-place since it uses only a small auxiliary stack.
+    2.It requires only n (log n) time to sort n items.
+    3.It has an extremely short inner loop.
+    4.This algorithm has been subjected to a thorough mathematical analysis, a very precise statement can be made about performance issues.
+
+#Disadvantages
+    1.It is recursive. Especially, if recursion is not available, the implementation is extremely complicated.
+    2.It requires quadratic (i.e., n2) time in the worst-case.
+    3.It is fragile, i.e. a simple mistake in the implementation can go unnoticed and cause it to perform badly.
+
+Practical Practice:-QuickSort Program(quicksort.java)
+
+
+NOTE:- Task Given by AkhileshSir two done but third Tree Program is left.
