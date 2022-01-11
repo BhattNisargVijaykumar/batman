@@ -20,7 +20,7 @@ Endpoints that have no children nodes are referred to as ‘leaf’ nodes. Trees
     4.provides a flexible way to hold and move data
     5.allows storage of many nodes
 
-
+#Types with Basic Details:-
 #General tree
 -A general tree is a type of tree data structure that has no constraints on the hierarchical structure. Every node can have an infinite number of children in a general tree. You can classify any tree having a hierarchical structure as a general tree. Also, the nodes can have any degree from 0 to n. A general tree stores hierarchical structures, such as a folder structure in a computer system.
 
