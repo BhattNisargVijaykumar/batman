@@ -1,0 +1,13 @@
+sql:- payment, more secure, 
+it is store table structure
+types:-
+mysql-mssql-po
+nosql:-report & analysis, less secure
+it is store not table structure
+it is fast to exist.
+typesd:-
+mongodb, json
+
+databaswe divide into small table called normalization.
+
+compulsory use script.sql
